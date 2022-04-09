@@ -249,6 +249,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#demo-case-study" class="md-nav__link">
+    Demo Case Study
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -267,6 +274,21 @@
     <li class="md-nav__item">
       <a href="about/" class="md-nav__link">
         About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="slides/" class="md-nav__link">
+        Slides
       </a>
     </li>
   
@@ -312,6 +334,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#demo-case-study" class="md-nav__link">
+    Demo Case Study
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -332,7 +361,7 @@
 <ul>
 <li>
 <p><code>Azure Data Factory (ADF)</code> is Microsoft’s cloud-native service for managing batch 
-data integration workloads</p>
+data integration workloads.</p>
 </li>
 <li>
 <p><code>ADF</code> is a serverless cloud service – you create your ETL applications, but you don’t have to worry about infrastructure like operating systems or servers or how to manage changes in demand</p>
@@ -342,27 +371,46 @@ data integration workloads</p>
 </li>
 </ul>
 <p><img alt="ADF UX !" src="https://docs.microsoft.com/en-us/azure/data-factory/media/author-visually/authoring-canvas.png" title="ADF UX" /></p>
-<ul>
-<li>
-<p>Choosing the same location as your data factory reduces cost, because moving data out of one 
+<!-- 
+* Choosing the same location as your data factory reduces cost, because moving data out of one 
 Azure region and into another incurs a bandwidth charge (sometimes referred to as 
-an egress charge)</p>
-</li>
-<li>
-<p>A <code>blob</code> refer to a file without considering its internal data 
+an egress charge) -->
+
+<!-- *  A `blob` refer to a file without considering its internal data 
 structure. This doesn’t imply that files described as blobs have no structure – it simply means that the structure isn’t important for the task at hand. blob is used to refer to a file without considering its internal data 
 structure. This doesn’t imply that files described as blobs have no structure – it 
-simply means that the structure isn’t important for the task at hand.</p>
+simply means that the structure isn’t important for the task at hand.
+
+* Blob storage is divided into a single level of blob containers – containers cannot be 
+nested -->
+
+<ul>
+<li>
+<p><code>ADF</code> has no storage resources of its own, but factory instances can 
+access and use external storage and compute resources via <strong><code>linked services</code></strong>.</p>
 </li>
 <li>
-<p>Blob storage is divided into a single level of blob containers – containers cannot be 
-nested</p>
+<p><code>ADF</code> stores metadata to represent objects inside external storage systems as <strong><code>datasets</code></strong></p>
 </li>
+<li>A <strong><code>pipeline</code></strong> is a collection of data 
+movement and transformation activities, grouped together to achieve a higher-level 
+data integration task. Simple, anything you can run or execute in <code>ADF</code> is a <strong><code>pipeline</code></strong></li>
+<li>Any data movement and transformation task in <code>ADF</code> is called <strong><code>activities</code></strong>. A pipeline must has atleast one <strong><code>activity</code></strong>.</li>
+<li>Internally, <code>ADF</code> makes use a managed compute service called <strong><code>integration runtime</code></strong>. This is what is use to move and transform data between datasets</li>
 </ul>
 <h2 id="adf-tasks"><strong>ADF Tasks</strong></h2>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/azure/data-factory/source-control">Link the Data Factory to the Git Repository</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal">Create Azure Storage Account</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/storage/blobs/quickstart-storage-explorer">Upload sample data to blob storage</a></li>
+<li><a href="https://www.cathrinewilhelmsen.net/copy-data-tool-azure-data-factory/?msclkid=064d82aab7d411ecbdf657d78bc51a33">Get started with Copy Data Tools</a></li>
+</ul>
+<h2 id="demo-case-study"><strong>Demo Case Study</strong></h2>
+<ul>
+<li><strong>About</strong> : <em>ABC</em> is a a fictional multinational confectionery manufacturer. They do not sell directly to consumers, but to a variety of retailers which 
+report monthly sales activity back to ABC. Sales reports are typically produced using 
+retailers’ own data management systems and are supplied in a wide variety of file 
+formats.</li>
 </ul>
 
               
