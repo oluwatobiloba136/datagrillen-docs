@@ -212,15 +212,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#azure-data-factory-facts-tips" class="md-nav__link">
+    Azure Data Factory Facts &amp; Tips
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#adf-tasks" class="md-nav__link">
+    ADF Tasks
   </a>
   
 </li>
@@ -275,15 +275,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#azure-data-factory-facts-tips" class="md-nav__link">
+    Azure Data Factory Facts &amp; Tips
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#adf-tasks" class="md-nav__link">
+    ADF Tasks
   </a>
   
 </li>
@@ -303,20 +303,31 @@
 
 
 <h1 id="welcome-to-etl-with-adf">Welcome to ETL with ADF</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<p>For full documentation visit <a href="https://docs.microsoft.com/en-us/azure/data-factory/">Azure Data Factory Documentation</a>.</p>
+<h2 id="azure-data-factory-facts-tips">Azure Data Factory Facts &amp; Tips</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>
+<p><code>Azure Data Factory (ADF)</code> is Microsoft’s cloud-native service for managing batch 
+data integration workloads</p>
+</li>
+<li>
+<p><code>ADF</code> is a serverless cloud service – you create your ETL applications, but you don’t have to worry about infrastructure like operating systems or servers or how to manage changes in demand</p>
+</li>
+<li>
+<p><code>ADF</code> has only a web based IDE called <em>ADF UX</em> . With an <code>ADF UX</code>, user can visually author and deploy resources for your data factory or Synapse pipelines without having to write any code</p>
+</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<p><img alt="ADF UX !" src="https://docs.microsoft.com/en-us/azure/data-factory/media/author-visually/authoring-canvas.png" title="ADF UX" /></p>
+<ul>
+<li>Choosing the same location as your data factory reduces cost, because moving data out of one 
+Azure region and into another incurs a bandwidth charge (sometimes referred to as 
+an egress charge)</li>
+</ul>
+<h2 id="adf-tasks"><strong>ADF Tasks</strong></h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/data-factory/source-control">Link the Data Factory to the Git Repository</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal">Create Azure Storage Account</a></li>
+</ul>
 
               
             </article>
